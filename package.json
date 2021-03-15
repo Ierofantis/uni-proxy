@@ -1,7 +1,7 @@
 {
-  "name": "node-express-skeleton",
+  "name": "uni-proxy",
   "version": "1.0.0",
-  "description": "Node.js + Express skeleton application",
+  "description": "Uni Proxy",
   "main": "index.js",
   "scripts": {
     "start": "export NODE_ENV=dev NODE_CONFIG_DIR=./src/config/ && nodemon -w src --exec \"babel-node src/app.js --presets es2015,stage-0\"",
@@ -9,8 +9,7 @@
     "populatedb": "babel-node --presets es2015 ./node_modules/pow-mongodb-fixtures/bin/mongofixtures node-express-skeleton-dev ./src/test/fixtures"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/romandunets/node-express-skeleton"
+    "type": "git"
   },
   "keywords": [
     "REST",
@@ -20,10 +19,6 @@
   ],
   "author": "Theodore P.",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/romandunets/node-express-skeleton"
-  },
-  "homepage": "https://github.com/romandunets/node-express-skeleton#readme",
   "dependencies": {
     "apicache": "^1.6.2",
     "axios": "^0.19.2",
