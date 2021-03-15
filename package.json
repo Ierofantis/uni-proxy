@@ -27,8 +27,7 @@
     "express": "^4.15.3",
     "express-throttle": "^2.0.0",
     "jsonwebtoken": "^7.4.2",
-    "morgan": "^1.8.2",
-    "node-cache": "^5.1.2"
+    "morgan": "^1.8.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
