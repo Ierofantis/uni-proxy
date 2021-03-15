@@ -37,7 +37,7 @@ I will provide the list of the urls that you can enter:
 # Implementation
 
 1) The main file is app.js that imports some libraries, starts the server and injects routes to the application
-2) src/routes.js declares routes. In every route I am using a very basic, cache and throttling mehanism. Also every route corresponds to one controller. For example in /getAllUniversities we need the universities.getAllUniversities controler
+2) src/routes.js declares routes. In every route I am using a very basic, cache and throttling mehanism. Also every route corresponds to one controller. For  example in /getAllUniversities we need the universities.getAllUniversities controler
 3) In src/controllers dir we have the universities and statistics controller. Universities controller is called in /getAllUniversities
 route and statistics controller is called in /getUniversityStatistics
 4) In src/test we have statistics and universities files where I have implemented the integration tests.
@@ -54,14 +54,14 @@ route and statistics controller is called in /getUniversityStatistics
 1) For cache in an ideal senario I would use a distributed solution like reddis, but now I have used a npm module that caches the
 content in memory. That has some good and bad implications:
 
-Good
-It is the fastest option available
+   Good
+   It is the fastest option available
 
-Bad
-If the server goes down the data is lost
+   Bad
+   If the server goes down the data is lost
 
-Also this is a very basic example and there is no strategy behind It. For example:
-What happens when data from the external api is updated?
+   Also this is a very basic example and there is no strategy behind It. For example:
+   What happens when data from the external api is updated?
 
 2) Node Js and expressjs are not mulit-threaded which means that it can only process one response at a time. By using asynchronous
 mechanisms on your server appear multi-threaded but they are not.
