@@ -54,14 +54,14 @@ route and statistics controller is called in /getUniversityStatistics
 1) For cache in an ideal senario I would use a distributed solution like reddis, but now I have used a npm module that caches the
 content in memory. That has some good and bad implications:
 
-`Good
+Good
 It is the fastest option available
 
 Bad
 If the server goes down the data is lost
 
 Also this is a very basic example and there is no strategy behind It. For example:
-What happens when data from the external api is updated?`
+What happens when data from the external api is updated?
 
 2) Node Js and expressjs are not mulit-threaded which means that it can only process one response at a time. By using asynchronous
 mechanisms on your server appear multi-threaded but they are not.
