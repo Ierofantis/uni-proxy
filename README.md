@@ -52,7 +52,7 @@ route and statistics controller is called in /getUniversityStatistics
 # Thoughts
 
 1) For cache in an ideal senario I would use a distributed solution like reddis, but now I have used a npm module that caches the
-content in memory. That has some good and bad implications. 
+content in memory. That has some good and bad implications:
 
 `Good
 It is the fastest option available
