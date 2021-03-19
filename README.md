@@ -18,7 +18,7 @@ University Api
  
  and after that type:
 
- `docker-compose build up`
+ `docker-compose up`
 
  4) Now you are ready to use the uni-api proxy
 
